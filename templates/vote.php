@@ -10,6 +10,7 @@
 			
 <!--			<script src="/../static/js/validatingVoteForm.js"></script>
 -->
+<!--
 <script type="text/javascript">
 
 //функция sendform() вызывается событием onsubmit у нашей формы myform
@@ -29,6 +30,7 @@ function sendform() {
 return true;
 }
 </script>
+-->
 	</head>
 <body >
 
@@ -45,7 +47,9 @@ return true;
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Главная</a></li>
+		<!--
         <li class="dropdown">
+		
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Прохождение<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Page 1-1</a></li>
@@ -53,6 +57,7 @@ return true;
             <li><a href="#">Page 1-3</a></li>
           </ul>
         </li>
+		-->
         <li><a href="vote.php">За кого проходить?</a></li>
         <li><a href="contacts.php">Контакты</a></li>
       </ul>
@@ -78,7 +83,7 @@ return true;
 		</ul>
 	</li>
 	<li>
-		<a href="#" title="Галерея">Галерея</a>
+		<a href="gallery.php" title="Галерея">Галерея</a>
 		<ul>
 
 		</ul>
@@ -86,34 +91,31 @@ return true;
 	<li>
 		<a href="#" title="Файлы">Файлы</a>
 		<ul>
-			<li><a href="#">Classic Edition</a></li>
-			<li><a href="#">Enhanced Edition</a></li>
-			<li><a href="#">Platinum Edition</a></li>
+			<li><a href="http://d.rutor.info/download/108900">Classic Edition</a></li>
+			<li><a href="http://d.rutor.info/download/325319">Enhanced Edition</a></li>
+			<li><a href="http://d.rutor.info/download/118841">Platinum Edition</a></li>
 
 		</ul>
 	</li>
 	<li>
-		<a href="#" title="Как с нами связаться">Контакт</a>
-		<ul>
-			
-			<li><a href="#">Местоположение</a></li>
-		</ul>
+		<a href="contacts.php" title="Как с нами связаться">Контакт</a>
+
 	</li>
 		</li>
 	<li>
-		<a href="about_game.php" title="Об игре">Об игре</a>
+		<a href="#" title="Об игре">Об игре</a>
 
 	</li>
 </ul>
 
-
 	
-	 <form  method="POST" onsubmit="return sendform()" name="myform">
+	 <form  method="POST" action="IorBorA.php" name="myform">
   <font align="center" color="white"><h3><p><b>Следующий опрос поможет Вам выбрать за кого же проходить Gothic 3<sup>*</sup>.</b></p></h1></font>
   <ol color="white">
+  
 <p class="int_h">
   <li color="white" value=1><font align="left" color="white"><p><b>Какая раса Вам нравится?</b></p></font>
-  <input type="radio" name="a001" value="First"><font color="white">Люди</font>
+  <input type="radio" name="a001" value="First"><font color="white">Люди</font><input type="number" value="<?=@$uphone;?>" max="6" min="0" maxlength="1" style="color:#f00; width:3em;" name="uphone" >
   <input type="radio" name="a001" value="Second"><font color="white">Орки</font>
 </p>
 

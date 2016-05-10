@@ -10,6 +10,12 @@ body {
 li{
 	color:white;
 }
+p{
+	color:white;
+}
+th{
+	vertical-align: top;
+}
 
 #nav{
 	float:left;
@@ -118,9 +124,13 @@ p.format5{
 }
 p.int_h{	
 	line-height: 1.5;
+	padding: 10px;
+	text-indent: 23px;
+	color:black;
 }
 p.subm{
 	text-indent: 23px;
+	color:black;
 }
 
 

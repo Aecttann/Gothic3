@@ -1,11 +1,11 @@
 <?php
-
+$rasa = false;
 if( isset( $_POST['a001'] ) )
 {
 	switch( $_POST['a001'] )
 	{
         case 'First':
-			$rasa = $human;
+			$rasa = true;
 //			echo 'Вам подходит прохождение игры на стороне Инноса. Рекомендации:';
 		break;
 		case 'Second':
@@ -141,12 +141,25 @@ if( isset( $_POST['h001'] ) )
 	}
 }
 
+/*
 if($killOrcs == true)
 {
-	require 'vote2.php';
+	echo 'test';
+//	require 'vote2.php';
 }
 else
 	echo 'test';
+*/
+
+if($rasa == true)
+{
+//	echo 'test';
+	require 'humans.php';
+}
+else if($rasa == $orcs)
+	require 'orcs.php';
+else if($rasa == false)
+	require 'index.php';
 
 
 ?>

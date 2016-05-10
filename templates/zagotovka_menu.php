@@ -3,15 +3,13 @@
 			<link href="../static/css/bootstrap.min.css" rel="stylesheet">
 			<link href="../static/css/new_style.css" rel="stylesheet">
 			<meta charset="utf-8">
-			<title> Готика 3 </title>
-			<Meta charset= "utf-8" >
+			<title> Gothic 3 </title>
+			<Meta charset= "utf-8">
 			<Meta name="Author" content="Васильчук Александр">
 			<link rel="shortcut icon" href="../static/images/icon.png" type="image/png">
 			
 	</head>
 	<body >
-	
-	
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -85,15 +83,12 @@
 
 	</li>
 </ul>
-<center>
-<font align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l_9U-fi8omI" frameborder="0" allowfullscreen></iframe>
-</font>
-</center>
 
 
-
-<center>
+	
+	
+	
+	<center>
 	<footer>
 			<font align="center" color="white"><a href="/">Aectann</a>&copy; 2016</a></font>
 		</footer>
